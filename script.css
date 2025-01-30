@@ -1,0 +1,295 @@
+:root {
+  --primary-color: #6C63FF; 
+  --secondary-color: #FF6584;
+  --text-color: #2E2E2E; 
+  --background-color: #F8F9FA; 
+  --link-color: #6C63FF; 
+  --button-hover-color: #5A52E0; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--button-hover-color);
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .left a {
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav .right a {
+  color: var(--text-color);
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+nav .right a.home-button {
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+nav .right a.home-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+nav .right a.home-button span {
+  margin-left: 5px;
+}
+
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.hero-section .text {
+  flex: 5;
+}
+
+.hero-section .text h2 {
+  font-size: 45px;
+  color: var(--primary-color);
+}
+
+.hero-section .text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.hero-section .text .links {
+  margin-top: 25px;
+}
+
+.hero-section .text .links a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-section .text .links a:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.hero-section .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-section .headshot img {
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+}
+
+.skills-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+.skills-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.skills-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-section .cells .cell a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skills-section .cells .cell a:hover {
+  color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.skills-section .cells .cell img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.skills-section .cells .cell span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.testimony-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.testimony-section h2 {
+  font-size: 35px;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimony-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-section .group .person-details {
+  text-align: center;
+  flex: 2;
+}
+
+.testimony-section .group .person-details img {
+  width: 150px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid var(--primary-color);
+}
+
+.testimony-section .group .person-details p {
+  font-weight: 600;
+}
+
+.testimony-section .group .person-details p:last-child {
+  font-weight: normal;
+  color: #666;
+}
+
+.testimony-section .group .text {
+  flex: 8;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 850px) {
+  .hero-section .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .headshot img {
+    width: 250px;
+  }
+
+  .testimony-section .group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0 20px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+  }
+
+  nav .right a.home-button {
+    padding: 8px 15px;
+  }
+
+  .hero-section {
+    padding: 0 20px;
+  }
+
+  .hero-section .text h2 {
+    font-size: 30px;
+  }
+
+  .skills-section,
+  .testimony-section {
+    padding: 0 20px;
+  }
+}

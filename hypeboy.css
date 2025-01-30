@@ -1,0 +1,201 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*all this is to make that navbar somehow work*/
+
+#mere{
+    position:fixed;
+    left:30px;
+    z-index: 999;
+    font-size: 20px;
+}
+.lmaonav{
+    display: inline-block;
+    position:fixed;
+    top:0px;
+    width:100%; 
+    align-items: right;
+    z-index: 999;
+    background-color: white;
+    height: 40px;
+    vertical-align: center;
+    box-shadow: 10px 2px 20px 2px rgb(0 0 0 / 0.3);
+}
+
+.thisisthenav{
+    float:right;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.thisisthenav td{
+    padding-right: 30px;
+    font-size: 20px;
+
+}
+
+/*okay navbar stuff over thank you*/
+
+
+a{
+    text-decoration: none;
+    color:#444747;
+}
+a:hover{
+    color:black;
+}
+
+
+.goldenhour{
+    text-transform: capitalize;
+    display: block;
+    align-items: center;
+    font-size: 70px;
+}
+.twang{
+    font-size: 27px;
+}
+
+footer{
+    background-color: white;
+    bottom:0px;
+    width: 100%;
+    left: 0px;
+}
+#headertext{
+    max-width: 40vw;
+    font-size: 18px;
+}
+
+.gale{
+    font-size: 15px;
+}
+
+/*this is for the showcase on the mainpage*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    width: 108%;
+  }
+  
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding-right: 9px;
+    padding-left: 9px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.heart{
+    font-size: 20px;
+}
+
+/*Resposive design goes raah*/
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+.maincont{
+    display: flex;
+    align-items: center;
+}       
+
+.mut{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: center;
+}
+
+.mut img{
+    max-width: 29vw;
+
+}
+
+.mut p{
+    font-size: 25px;
+}
+.regrets{
+    font-size: 40px;
+    font-style: italic;
+}
+/*foot fetish*/
+.contactline{
+    display: block;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-align: centers;
+}
+
+.contactline p{
+    font-size: 25px;
+    position: absolute;
+    bottom:10px;
+    padding-left: calc(50vw - 180px);
+}
+#yom{
+    font-size: 20px;
+    display: block
+ }
+ #yom i{
+    font-size: 38px;
+ }
+
+ #links{
+    font-size: 30px;
+ }
+
+
+ /*This is a comment, and was made by me and not ai because im using a single css file and its really hard to keep track of things now (bad high level design lmao)*/
+ /*This takes care of the posts on the gallery page somehow*/
+
+ .mainshit{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width:100%
+ }
+
+ .postcont{
+    flex:100%;
+    max-width: 60vw;
+    text-align: center;
+    padding-bottom:20px;
+}
+
+ .postcont img{
+    vertical-align: middle;
+    padding-bottom: 10px;
+    max-width: 40vw;
+ }
+
+.ptitle{
+    font-size: 30px;
+}
+.pdex{
+    font-size:18px;
+}
